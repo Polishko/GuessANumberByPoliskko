@@ -1,6 +1,6 @@
 # GuessANumberByPoliskko
 
-![image](https://user-images.githubusercontent.com/119063181/215555565-f7a62507-999c-406d-8287-70b10e60642f.png)
+![image](https://user-images.githubusercontent.com/119063181/215555819-5e0bd38a-caef-4df5-82b0-efb680475a1b.png)
 
 
 The simple console game: Guess a number
