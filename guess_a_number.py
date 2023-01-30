@@ -13,7 +13,8 @@ print(f"Hi! Guess the computer number. Level: {level}. You can make {remaining_a
 while True:
 
     while level == 1:
-        player_input = input("Guess the number (1-100): ")
+        player_input = input(Fore.GREEN + "Guess the number (1-100): ")
+        print(Style.RESET_ALL)
 
         if not player_input.isdigit():
             print("Invalid input! Try again...")
@@ -53,7 +54,8 @@ while True:
             print(f"Level: {level}. You can make {remaining_attempts} attempts.")
 
         while level == 2:
-            player_input = input("Guess the number (1-200): ")
+            player_input = input(Fore.GREEN + "Guess the number (1-200): ")
+            print(Style.RESET_ALL)
 
             if not player_input.isdigit():
                 print("Invalid input! Try again...")
@@ -93,7 +95,8 @@ while True:
                 print(f"Level: {level}. You can make {remaining_attempts} attempts.")
 
             while level == 3:
-                player_input = input("Guess the number (1-300): ")
+                player_input = input(Fore.GREEN + "Guess the number (1-300): ")
+                print(Style.RESET_ALL)
 
                 if not player_input.isdigit():
                     print("Invalid input! Try again...")
@@ -133,8 +136,8 @@ while True:
                     break
 
     if game_won:
-        print("Congrats, you win!")
+        print(Fore.CYAN + "Congrats, you win!")
         break
     if no_attempts_remaining:
-        print("Sorry, you lost!")
+        print(Fore.BLACK + "Sorry, you lost!")
         break
