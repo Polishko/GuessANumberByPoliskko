@@ -1,4 +1,6 @@
 import random
+from colorama import Fore, Style
+
 computer_number = random.randint(1, 100)
 remaining_attempts = 20
 level = 1
@@ -21,7 +23,8 @@ while True:
 
         if player_number > computer_number:
             remaining_attempts -= 1
-            print("Too high!")
+            print(Fore.RED + "Too high!")
+            print(Style.RESET_ALL)
 
             if remaining_attempts == 0:
                 no_attempts_remaining = True
@@ -32,7 +35,8 @@ while True:
 
         elif player_number < computer_number:
             remaining_attempts -= 1
-            print("Too low!")
+            print(Fore.BLUE + "Too low!")
+            print(Style.RESET_ALL)
 
             if remaining_attempts == 0:
                 no_attempts_remaining = True
@@ -59,7 +63,8 @@ while True:
 
             if player_number > computer_number:
                 remaining_attempts -= 1
-                print("Too high!")
+                print(Fore.RED + "Too high!")
+                print(Style.RESET_ALL)
 
                 if remaining_attempts == 0:
                     no_attempts_remaining = True
@@ -70,7 +75,8 @@ while True:
 
             elif player_number < computer_number:
                 remaining_attempts -= 1
-                print("Too low!")
+                print(Fore.BLUE + "Too low!")
+                print(Style.RESET_ALL)
 
                 if remaining_attempts == 0:
                     no_attempts_remaining = True
@@ -99,7 +105,8 @@ while True:
 
                 if player_number > computer_number:
                     remaining_attempts -= 1
-                    print("Too high!")
+                    print(Fore.RED + "Too high!")
+                    print(Style.RESET_ALL)
 
                     if remaining_attempts == 0:
                         no_attempts_remaining = True
@@ -110,7 +117,8 @@ while True:
 
                 elif player_number < computer_number:
                     remaining_attempts -= 1
-                    print("Too low!")
+                    print(Fore.BLUE + "Too low!")
+                    print(Style.RESET_ALL)
 
                     if remaining_attempts == 0:
                         no_attempts_remaining = True
